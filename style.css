@@ -1,0 +1,115 @@
+:root {
+  --background-1: #1b1a55;
+  --background-2: #070f2b;
+  --background-3: #535c91;
+  --text-color: #9290c3;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--background-3);
+  color: inherit;
+  outline: none;
+  padding-bottom: 10px;
+}
+input[type="text"] {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+body {
+  min-height: 100vh;
+  font-family: "Trispace", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-1);
+  font-size: 1em;
+  color: var(--text-color);
+}
+main {
+  width: 90%;
+  height: 550px;
+  display: flex;
+  background-color: var(--background-2);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 30px;
+  max-width: 1440px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.menu {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.menu button {
+  text-align: left;
+  width: 100%;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 140%;
+}
+
+.menu button:first-child {
+  border-top-left-radius: 20px;
+}
+
+.menu .active,
+.menu button:hover {
+  background-color: var(--background-3);
+  color: var(--background-2);
+}
+main .content {
+  width: 100%;
+}
+
+form {
+  margin-top: 30px;
+  max-width: 700px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 140%;
+  gap: 20px;
+  flex-direction: column;
+
+  .book-btn {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--background-3);
+    color: var(--background-1);
+  }
+}
